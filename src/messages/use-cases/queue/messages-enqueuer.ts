@@ -1,5 +1,5 @@
-import { MessageData } from '../entities/message-data';
+import { EnqueueMessageDTO } from '../entities/enqueue-message-dto'
 
 export interface IMessagesEnqueuer {
-    enqueue(message : MessageData) : Promise<{ id : string }>
+    enqueue(message : EnqueueMessageDTO) : Promise<{ id : string }>
 }

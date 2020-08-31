@@ -1,8 +1,7 @@
 import { DataObject } from './data-object'
 
-export type MessageData = {
-    id: string,
-    data?: {
+export type EnqueueMessageDTO = {
+    data: {
         [key:string]: DataObject
     }
 }

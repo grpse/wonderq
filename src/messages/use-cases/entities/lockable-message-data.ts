@@ -1,7 +1,8 @@
 import { DataObject } from './data-object'
 
-export type MessageData = {
+export type LockableMessageData = {
     id: string,
+    locked?: boolean
     data?: {
         [key:string]: DataObject
     }

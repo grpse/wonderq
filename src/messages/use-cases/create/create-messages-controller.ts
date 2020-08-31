@@ -1,5 +1,5 @@
 import { IMessagesEnqueuer } from '../queue/messages-enqueuer'
-import { MessageData } from '../entities/message-data'
+import { EnqueueMessageDTO } from '../entities/enqueue-message-dto'
 
 export class CreateMessagesController {
 
@@ -16,6 +16,6 @@ export class CreateMessagesController {
 
 export namespace CreateMessagesController {
     export type Params = {
-        message: MessageData
+        message: EnqueueMessageDTO
     }
 }

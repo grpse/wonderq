@@ -1,0 +1,1 @@
+export type DataObject = number | boolean | string | { [key:string] : DataObject }

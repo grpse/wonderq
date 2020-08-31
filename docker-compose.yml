@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  wonderq:
+    image: node:14.4.0-stretch
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: "npm run start:dev"
+    ports: 
+      - "3000:3000"
+    environment: 
+      - NODE_ENV=development
+      - LOCK_MESSAGES_TIMEOUT=10000
